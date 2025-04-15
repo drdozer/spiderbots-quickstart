@@ -1,0 +1,13 @@
+{
+  "name": "spiderbots-quickstart",
+  "version": "0.0.1",
+  "title": "Spiderbots Quickstart",
+  "author": "drdozer",
+  "description": "Allow a quickstart for Spiderbots, with a configurable number of starting bots.",
+  "dependencies": [
+    "base >= 2.0",
+		"spiderbots",
+    "? PyBlock"
+	],
+  "factorio_version": "2.0"
+}
