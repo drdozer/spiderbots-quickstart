@@ -19,6 +19,9 @@ hard dep**.
   value). No code or declaration changes made; issue
   `issues/spiderbots-quickstart-not-2.1.md` remains OPEN with the portal
   facts added.
+- **Decision (later same day)**: Path A chosen — wait for upstream; do not
+  fork+port. Ticket parked in superproject `blocked/` with a one-call
+  trigger check (portal API newest release's fv).
 
 ### End state
 
