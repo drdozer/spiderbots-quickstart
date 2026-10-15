@@ -3,6 +3,28 @@
 Chronological log of agent work sessions. Companion docs: `README.md`,
 superproject `issues/spiderbots-quickstart-not-2.1.md`.
 
+## Session 2026-10-15 (b) — 2.1-retarget investigation (no port)
+
+Follow-up to the port session, per the retarget tickets
+(superproject `inbox/retarget-spiderbots-quickstart-to-2.1.md`, Order 2).
+Question: is a fv 2.0 → 2.1 retarget trivial? Answer: **no — blocked on the
+hard dep**.
+
+- Portal API check: `spiderbots` latest is 0.3.2 (2026-06-25) and **every
+  release since 0.2.1 declares fv 2.0** — no 2.1 release exists.
+- Therefore bumping this mod's fv alone is dead-on-arrival (2.1 would reject
+  with `Missing required dependency spiderbots` instead of the fv gate).
+- Paths recorded in the ticket: wait/ask upstream (asher_sky) vs fork+port
+  spiderbots (real third-party port work, weighed against the mod's tiny
+  value). No code or declaration changes made; issue
+  `issues/spiderbots-quickstart-not-2.1.md` remains OPEN with the portal
+  facts added.
+
+### End state
+
+- No mod changes; superproject commit carries the ticket + issue update.
+- Re-check trigger: a 2.1-declared spiderbots release on the portal.
+
 ## Session 2026-10-15 — structural port to superproject standard
 
 Starting point: 0.0.1 at `4ec45c9`, repo-root layout, fv "2.0", deps
